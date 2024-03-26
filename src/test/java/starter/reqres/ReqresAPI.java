@@ -34,6 +34,10 @@ public class ReqresAPI {
     public void deleteUser(int id){
         SerenityRest.given().pathParam("id", id);
     }
+    @Step("Delete user with invalid user id")
+    public void deleterUserInvalidId(String id){
+        SerenityRest.given().pathParam("id", id);
+    }
 
     @Step("User login with email and password")
     public void postUserLogin(File json){

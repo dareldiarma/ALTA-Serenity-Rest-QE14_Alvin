@@ -1,6 +1,6 @@
-Feature: Get list user with parameter unknown user
+Feature: Get list users with parameter unknown user
   @Tugas
-  Scenario Outline: Get list user with parameter unknown
+  Scenario Outline: Get list users with parameter unknown
     Given Get list user with parameter "<parameter>"
     When Send request get list user with specific parameter
     Then Status code should be 200

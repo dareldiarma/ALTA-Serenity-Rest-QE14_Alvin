@@ -19,4 +19,8 @@ public class DeleteStepDef {
         SerenityRest.when().delete(ReqresAPI.DELETE_USER);
     }
 
+    @Given("Delete user with invalid user id {string}")
+    public void deleteUserWithInvalidUserId(String id) {
+        reqresAPI.deleterUserInvalidId(id);
+    }
 }
